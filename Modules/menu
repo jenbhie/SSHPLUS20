@@ -233,15 +233,15 @@ echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━�
 echo -e "\033[1;32mOnline:\033[1;37m $_onlin     \033[1;31mExpired: \033[1;37m$_userexp \033[1;33mTotal: \033[1;37m$_tuser\033[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
-echo -e "\033[1;36m03\033[1;31m] \033[1;37m\033[1;37m• \033[1;33mREMOVE USER \033[1;31m             [\033[1;36m10\033[1;31m] \033[1;37m• \033[1;33mBAD VPN $stsu\033[1;31m
-[\033[1;36m02\033[1;31m] \033[1;37m• \033[1;33mMONITOR ONLINE USERS \033[1;31m       [\033[1;36m11\033[1;31m] \033[1;37m• \033[1;33mVPS INFO\033[1;31m
-[\033[1;36m03\033[1;31m] \033[1;37m• \033[1;33mCHANGE EXPIRATION DATE \033[1;31m            [\033[1;31m[\033[1;36m12\033[1;31m] \033[1;37m• \033[1;33mADD HOST \033[1;31m
-[\033[1;36m04\033[1;31m] \033[1;37m• \033[1;33mCHANGE ACCOUNT LIMIT \033[1;31m   [\033[1;36m13\033[1;31m] \033[1;37m• \033[1;33mREMOVE HOST \033[1;31m
-[\033[1;36m05\033[1;31m] \033[1;37m• \033[1;33mCHANGE USER PASSWORD \033[1;31m [\033[1;36m14\033[1;31m] \033[1;37m• \033[1;33mRESET SERVICES \033[1;31m
-[\033[1;36m06\033[1;31m] \033[1;37m• \033[1;33mREMOVE EXPIRED USERS \033[1;31m   [\033[1;36m15\033[1;31m] \033[1;37m• \033[1;33mBLOCK TORRENT $stsf\033[1;31m
-[\033[1;36m07\033[1;31m] \033[1;37m• \033[1;33mUSERS INFO \033[1;31m   [\033[1;36m27\033[1;31m] \033[1;37m• \033[1;33mMAIN EXECUTION $autm \033[1;31m
-[\033[1;36m08\033[1;31m] \033[1;37m• \033[1;33mMANAGE CONNECTIONS \033[1;31m   [\033[1;36m17\033[1;31m] \033[1;37m• \033[1;33mREMOVE SCRIPT \033[1;31m
-[\033[1;36m09\033[1;31m] \033[1;37m• \033[1;33mSSH LIMITER $stsl\033[1;31m      [\033[1;36m00\033[1;31m] \033[1;37m• \033[1;33mEXIT \033[1;32m<\033[1;33m<\033[1;31m<\033[0m \033[0m"
+echo -e "\033[1;31m[\033[1;36m01\033[1;31m] \033[1;37m• \033[1;33mADD HOST \033[1;31m             [\033[1;36m10\033[1;31m] \033[1;37m• \033[1;33mMONITOR ONLINE USERS \033[1;31m
+[\033[1;36m02\033[1;31m] \033[1;37m• \033[1;33mREMOVE HOST \033[1;31m       [\033[1;36m11\033[1;31m] \033[1;37m• \033[1;33mSSH LIMITER $stsl\033[1;31m
+[\033[1;36m03\033[1;31m] \033[1;37m\033[1;37m• \033[1;33mREMOVE USER \033[1;31m            [\033[1;36m12\033[1;31m] \033[1;37m• \033[1;33mBAD VPN $stsu\033[1;31m
+[\033[1;36m04\033[1;31m] \033[1;37m• \033[1;33mCHANGE EXPIRATION DATE \033[1;31m   [\033[1;36m13\033[1;31m] \033[1;37m• \033[1;33mVPS INFO\033[1;31m
+[\033[1;36m05\033[1;31m] \033[1;37m• \033[1;33mCHANGE ACCOUNT LIMIT \033[1;31m [\033[1;36m14\033[1;31m] \033[1;37m• \033[1;33mRESTART SERVICES \033[1;31m
+[\033[1;36m06\033[1;31m] \033[1;37m• \033[1;33mCHANGE USER PASSWORD \033[1;31m   [\033[1;36m15\033[1;31m] \033[1;37m• \033[1;33mBLOCK TORRENT $stsf\033[1;31m
+[\033[1;36m07\033[1;31m] \033[1;37m• \033[1;33mREMOVE EXPIRED USER \033[1;31m   [\033[1;36m16\033[1;31m] \033[1;37m• \033[1;33mMAIN EXECUTION $autm \033[1;31m
+[\033[1;36m08\033[1;31m] \033[1;37m• \033[1;33mUSERS INFO \033[1;31m   [\033[1;36m17\033[1;31m] \033[1;37m• \033[1;33mREMOVE SCRIPT \033[1;31m
+[\033[1;36m09\033[1;31m] \033[1;37m• \033[1;33mMANAGE CONNECTIONS \033[1;31m      [\033[1;36m00\033[1;31m] \033[1;37m• \033[1;33mEXIT \033[1;32m<\033[1;33m<\033[1;31m<\033[0m \033[0m"
 echo ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
@@ -249,68 +249,69 @@ echo -ne "\033[1;32mPLEASE SELECT FROM OPTIONS \033[1;33m?\033[1;31m?\033[1;37m 
 
 case "$x" in 
    1 | 01)
-      clear
-   remover
-   sleep 3
-   ;;
-   2 | 02)
-   clear
-   sshmonitor
-   echo -ne "\n\033[1;31mENTER \033[1;33mto return to \033[1;32mMENU!\033[0m"; read
-   ;;      
-   3 | 03)
-   clear
-   mudardata
-   sleep 3
-   ;;
-   4 | 04)
-   clear
-   alterarlimite
-   sleep 3
-   ;; 
-   5 | 05)
-   clear
-   alterarsenha
-   sleep 3
-   ;;
-   6 | 06)
-   clear
-   expcleaner
-   echo ""
-   sleep 3
-   ;;     
-   7 | 07)
-   clear
-   infousers
-   echo -ne "\n\033[1;31mENTER \033[1;33mto return to \033[1;32mMENU!\033[0m"; read
-   ;;
-   8 | 08)
-   conexao
-   exit;
-   ;;
-   9 | 09)
-   limit_ssh
-   ;;
-   10)
-   clear
-   badvpn
-   exit;
-   ;;
-   11)
-   detalhes
-   echo -ne "\n\033[1;31mENTER \033[1;33mto return to \033[1;32mMENU!\033[0m"; read
-   ;;
-   12)
    clear
    addhost
    echo -ne "\n\033[1;31mENTER \033[1;33mto return to \033[1;32mMENU!\033[0m"; read
    menu2
    ;;
-   13)
+   2 | 02)
    clear
    delhost
    echo -ne "\n\033[1;31mENTER \033[1;33mto return to \033[1;32mMENU!\033[0m"; read
    menu2
+   ;;
+   3 | 03)
+   clear
+   remover
+   sleep 3
+   ;;
+   4 | 04)
+   clear
+   mudardata
+   sleep 3
+   ;;
+   5 | 05)
+   clear
+   alterarlimite
+   sleep 3
+   ;; 
+   6 | 06)
+   clear
+   alterarsenha
+   sleep 3
+   ;;
+   7 | 07)
+   clear
+   expcleaner
+   echo ""
+   sleep 3
+   ;;     
+   8 | 08)
+   clear
+   infousers
+   echo -ne "\n\033[1;31mENTER \033[1;33mto return to \033[1;32mMENU!\033[0m"; read
+   ;;
+   9 | 09)
+   conexao
+   exit;
+   ;;
+   10)
+   clear
+   sshmonitor
+   echo -ne "\n\033[1;31mENTER \033[1;33mto return to \033[1;32mMENU!\033[0m"; read
+   ;;      
+   11)
+   limit_ssh
+   ;;
+   12)
+   clear
+   badvpn
+   exit;
+   ;;
+   13)
+   clear
+   detalhes
+   echo -ne "\n\033[1;31mENTER \033[1;33mto return to \033[1;32mMENU!\033[0m"; read
    ;;
    14)
    clear
