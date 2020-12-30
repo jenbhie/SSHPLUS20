@@ -1,21 +1,4 @@
 #!/bin/bash
-remove_ovp () {
-if [[ -e /etc/debian_version ]]; then
-	GROUPNAME=nogroup
-fi
-user="$1"
-cd /etc/openvpn/easy-rsa/
-./easyrsa --batch revoke $user
-./easyrsa gen-crl
-rm -rf pki/reqs/$user.req
-rm -rf pki/private/$user.key
-rm -rf pki/issued/$user.crt
-rm -rf /etc/openvpn/crl.pem
-cp /etc/openvpn/easy-rsa/pki/crl.pem /etc/openvpn/crl.pem
-chown nobody:$GROUPNAME /etc/openvpn/crl.pem
-[[ -e $HOME/$user.ovpn ]] && rm $HOME/$user.ovpn > /dev/null 2>&1
-[[ -e /var/www/html/openvpn/$user.zip ]] && rm /var/www/html/openvpn/$user.zip > /dev/null 2>&1
-} > /dev/null 2>&1
 [[ ! -e /usr/lib/sshplus ]] && rm -rf /bin/ > /dev/null 2>&1
 database="/root/users.db"
 clear
@@ -60,9 +43,6 @@ else
 		echo -e "\E[41;1;37m User $user removed successfully! \E[0m"
 		grep -v ^$user[[:space:]] /root/users.db > /tmp/ph ; cat /tmp/ph > /root/users.db
 		rm /etc/SSHPlus/senha/$user 1>/dev/null 2>/dev/null
-		if [[ -e /etc/openvpn/server.conf ]]; then
-			remove_ovp $user
-		fi
 		exit 1
 	elif [[ "$(cat "$database"| grep -w $user| wc -l)" -ne "0" ]]; then
 		ps x | grep $user | grep -v grep | grep -v pt > /tmp/rem
@@ -72,9 +52,6 @@ else
 			echo -e "\E[41;1;37m User $user removed successfully! \E[0m"
 			grep -v ^$user[[:space:]] /root/users.db > /tmp/ph ; cat /tmp/ph > /root/users.db
 			rm /etc/SSHPlus/senha/$user 1>/dev/null 2>/dev/null
-			if [[ -e /etc/openvpn/server.conf ]]; then
-				remove_ovp $user
-		    fi
 			exit 1
 		else
 		    echo ""
@@ -84,9 +61,6 @@ else
 			echo -e "\E[41;1;37m User $user successfully removed! \E[0m"
 			grep -v ^$user[[:space:]] /root/users.db > /tmp/ph ; cat /tmp/ph > /root/users.db
 			rm /etc/SSHPlus/senha/$user 1>/dev/null 2>/dev/null
-			if [[ -e /etc/openvpn/server.conf ]]; then
-				remove_ovp $user
-		    fi
 			exit 1
 		fi
 	else
@@ -103,9 +77,6 @@ elif [[ "$resp" = "2" ]]; then
 		for user in $(cat /etc/passwd |awk -F : '$3 > 900 {print $1}' |grep -vi "nobody"); do
 			pkill -f $user > /dev/null 2>&1
 			deluser --force $user > /dev/null 2>&1
-        if [[ -e /etc/openvpn/server.conf ]]; then
-		   remove_ovp $user
-		fi
 		done
 		rm $HOME/users.db && touch $HOME/users.db
         rm *.zip > /dev/null 2>&1
